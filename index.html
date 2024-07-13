@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application Form</h1>
+        <form id="jobApplicationForm">
+            <label >Name:</label>
+            <input type="text" id="name" name="name" placeholder="username"  required>
+            
+            <label >Roll Number:</label>
+            <input type="text" id="rl" name="rl" placeholder="Enter roll no" required>
+
+            <label >CGPA:</label>
+            <input type="number" step="0.01" id="cgpa" name="cgpa" placeholder="Enter CGPA" required>
+            
+            <label >Role:</label>
+            <select name="role" id="role" required>
+                <option value="">Select the roll</option>
+                <option value="GET">GET</option>
+                <option value="full stack developer">Full Stack Developer</option>
+                <option value="software engineer">Software Engineer</option>
+                <option value="Instrumentaion engineer">Instrumentaion Engineer</option>
+            </select>
+
+            <label >Graduation Year:</label>
+            <input type="number" id="gy" name="gy" placeholder="Enter the yr of graduation" required>
+            
+            <button type="submit">Apply</button>
+            <p id="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
